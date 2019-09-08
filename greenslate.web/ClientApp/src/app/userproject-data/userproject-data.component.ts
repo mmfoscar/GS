@@ -2,10 +2,10 @@ import { Component, Inject } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
-  selector: 'app-fetch-data',
-  templateUrl: './fetch-data.component.html'
+  selector: 'app-userproject-data',
+  templateUrl: './userproject-data.component.html'
 })
-export class FetchDataComponent {
+export class UserProjectDataComponent {
   public http: HttpClient;
   public baseUrl: string;
   public users: UserList[];
@@ -21,7 +21,6 @@ export class FetchDataComponent {
 
   SearchUserProjects(id: number) {
     if (id !== 0) {
-      alert(id);
       this.http.get<UserProjectList[]>(this.baseUrl + 'api/userprojects/' + id).subscribe(result => {
         this.userProjects = result;
       }, error => console.error(error));
