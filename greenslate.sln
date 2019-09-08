@@ -1,0 +1,59 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29209.62
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{3D952A13-6BA1-4189-8295-13B90FC6510E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Service", "Service", "{AA177103-79BA-4315-8530-DF2DD1B5C450}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{14473A86-EB8B-48A8-BB42-3F02095118B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "greenslate.web", "greenslate.web\greenslate.web.csproj", "{90B4A984-70D4-4A86-A30D-A708D95F608B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{F6A4C2CE-B652-4578-998A-A9540CA9D7E2}"
+EndProject
+Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "greenslate.db", "greenslate.db\greenslate.db.sqlproj", "{255821B7-A362-4997-838C-18FFB26BD6DA}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "greenslate.repo", "greenslate.repo\greenslate.repo.csproj", "{840E347B-5B50-43EF-9A64-F62F3EA8CF6D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "greenslate.api", "greenslate.api\greenslate.api.csproj", "{30989A74-989C-4580-A1B4-9F2DFE7FAFDA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{90B4A984-70D4-4A86-A30D-A708D95F608B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90B4A984-70D4-4A86-A30D-A708D95F608B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90B4A984-70D4-4A86-A30D-A708D95F608B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90B4A984-70D4-4A86-A30D-A708D95F608B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255821B7-A362-4997-838C-18FFB26BD6DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{255821B7-A362-4997-838C-18FFB26BD6DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{255821B7-A362-4997-838C-18FFB26BD6DA}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{255821B7-A362-4997-838C-18FFB26BD6DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{255821B7-A362-4997-838C-18FFB26BD6DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{255821B7-A362-4997-838C-18FFB26BD6DA}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{840E347B-5B50-43EF-9A64-F62F3EA8CF6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{840E347B-5B50-43EF-9A64-F62F3EA8CF6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{840E347B-5B50-43EF-9A64-F62F3EA8CF6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{840E347B-5B50-43EF-9A64-F62F3EA8CF6D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{30989A74-989C-4580-A1B4-9F2DFE7FAFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{30989A74-989C-4580-A1B4-9F2DFE7FAFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{30989A74-989C-4580-A1B4-9F2DFE7FAFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{30989A74-989C-4580-A1B4-9F2DFE7FAFDA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{90B4A984-70D4-4A86-A30D-A708D95F608B} = {14473A86-EB8B-48A8-BB42-3F02095118B7}
+		{255821B7-A362-4997-838C-18FFB26BD6DA} = {F6A4C2CE-B652-4578-998A-A9540CA9D7E2}
+		{840E347B-5B50-43EF-9A64-F62F3EA8CF6D} = {3D952A13-6BA1-4189-8295-13B90FC6510E}
+		{30989A74-989C-4580-A1B4-9F2DFE7FAFDA} = {AA177103-79BA-4315-8530-DF2DD1B5C450}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A2D070E2-9103-4192-ABAE-72F7FE03E49A}
+	EndGlobalSection
+EndGlobal

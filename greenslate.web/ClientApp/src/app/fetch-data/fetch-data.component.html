@@ -1,0 +1,36 @@
+<h1>Project Status</h1>
+
+<p>Select a user:</p>
+
+<p *ngIf="!users"><em>Loading...</em></p>
+
+<select class='dropdown' *ngIf="users" (change)="SearchUserProjects($event.target.value)">
+  <option value="0">...</option>
+  <option value="{{ user.id }}" *ngFor="let user of users">
+    {{ user.firstName }} {{ user.lastName }}
+  </option>
+</select>
+
+<table class='table'>
+  <thead>
+    <tr>
+      <th>Project Id</th>
+      <th>Start Date</th>
+      <th>Time to Start</th>
+      <th>End Date</th>
+      <th>Credits</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let project of userProjects">
+      <td>{{ project.projectId }}</td>
+      <td>{{ project.startDate }}</td>
+      <td>{{ project.timeToStart }}</td>
+      <td>{{ project.endDate }}</td>
+      <td>{{ project.credits }}</td>
+      <td>{{ project.status }}</td>
+    </tr>
+  </tbody>
+</table>
+
